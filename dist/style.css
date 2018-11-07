@@ -55,7 +55,7 @@ a {
   text-decoration: none; }
 
 header {
-  background: url(img/0134f57cb20bb4c6b46d8e4ae1809b5f-video.jpg) no-repeat;
+  background: url(img/video.jpg) no-repeat;
   width: 100%;
   height: 768px;
   overflow: hidden; }
@@ -67,6 +67,9 @@ header, header a {
   float: left;
   margin: 31px 0 0 30px;
   font-size: 40px; }
+  .logo a {
+    display: block;
+    color: #fff; }
 
 .nav-menu {
   float: right;
