@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans/OpenSans.eot');
+    src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro/MyriadPro.eot');
+    src: url('../fonts/MyriadPro/MyriadPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadPro/MyriadPro.woff') format('woff'),
+    url('../fonts/MyriadPro/MyriadPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
