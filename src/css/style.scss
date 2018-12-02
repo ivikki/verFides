@@ -14,14 +14,17 @@ a{
 
 a:hover{
     text-decoration: none;
-    color: $white;
 }
 
 h3{
     font-size: 36px;
 }
 
-header, header a{
+h4{
+    font-size: 18px;
+}
+
+header, header a, header a:hover{
     color: $white;
 }
 
@@ -126,11 +129,7 @@ section h3:after{
     margin-left: -126px;
 }
 
-section h4, .slider-item p{
-    font-size: 18px;
-}
-
-section p{
+section .text{
     font-size: 14px;
     margin-right: 3px;
 }
@@ -145,6 +144,64 @@ section p{
     height: 300px;
 }
 
-.slider-item p{
-    width: 180px;
+.slider-item{
+    margin: 0 40px;
+}
+
+.management-item{
+    margin-right: 61px;
+    font-family: MyriadPro;
+}
+
+.management-item:last-child{
+    margin-right: 0;
+}
+
+.name{
+    margin: 20px 0 0 0;
+}
+
+.social{
+    font-size: 14px;
+}
+
+.social a{
+    color: #1a3255;
+    margin-right: 6px;
+}
+
+.see-all{
+    font-size: 14px;
+    color: #1a3255;
+    padding: 15px 60px;
+    border: 1px solid #1a3255;
+    font-family: MyriadPro;
+}
+
+.see-all:hover{
+    color: #1a3255;
+}
+
+.blue{
+    color: $white;
+    background: #1a3255;
+    font-family: MyriadPro;
+}
+
+.map{
+    background: #1a3255 url("../img/map.png") no-repeat 50% 0;
+    padding: 80px 0;
+}
+
+.blue p{
+    font-size: 18px;
+}
+
+.blue a{
+    color: $white;
+    border: 1px solid $white;
+}
+
+.map a{
+    padding: 18px 10px 18px 35px;
 }
