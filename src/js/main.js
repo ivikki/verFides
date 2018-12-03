@@ -6,10 +6,8 @@ import 'slick-carousel/slick/slick.css';
 $(document).ready(function(){
 
     var slider = $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
-        infinite: true,
-        fade: true
+        slidesToShow: 4,
+        slidesToScroll: 1
     });
 
     $('.btn-play').click(function(){

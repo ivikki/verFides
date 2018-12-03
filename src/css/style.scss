@@ -115,6 +115,10 @@ button:after{
     display: none !important;
 }
 
+submit{
+    cursor: pointer;
+}
+
 section{
     padding-top: 82px;
     padding-bottom: 79px;
@@ -152,7 +156,23 @@ section h3:after{
 }
 
 .slider-item{
-    margin: 0 40px;
+    margin: 0 30px;
+}
+
+.slider-item img{
+    margin: 0 auto 15px;
+}
+
+.slick-prev{
+    background: url("../img/arrow_sl_left.jpg") no-repeat;
+    width: 37px;
+    height: 72px;
+}
+
+.slick-next{
+    background: url("../img/arrow_sl_right.jpg") no-repeat;
+    width: 37px;
+    height: 72px;
 }
 
 .management-item{
@@ -183,7 +203,7 @@ section h3:after{
 
 .link-arrow{
     font-size: 14px;
-    color: #1a3255;
+    color: $blue;
     padding: 15px 60px;
     border: 1px solid $blue;
     font-family: MyriadPro;
@@ -210,7 +230,7 @@ section h3:after{
     padding: 80px 0;
 }
 
-.blue a{
+.blue .link-arrow{
     color: $white;
     border: 1px solid $white;
 }
@@ -219,11 +239,21 @@ section h3:after{
     padding: 18px 10px 18px 35px;
 }
 
-input[type=text]{
-    opacity: 0.07;
+label{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+input[type=text], textarea{
+    background: rgba(255, 255, 255, 0.07);
     border: none;
     padding: 10px 10px;
     width: 313px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
 }
 
 input[type=text]:first-child{
@@ -231,9 +261,6 @@ input[type=text]:first-child{
 }
 
 textarea{
-    opacity: 0.07;
-    padding: 10px 10px;
-    width: 313px;
     height: 170px;
 }
 
