@@ -30,6 +30,7 @@ header, header a, header a:hover{
 }
 
 .header-text{
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -71,9 +72,9 @@ header h3:after{
 }
 
 .next{
-    font-size: 22px;
+    font-size: 25px;
     border: 1px solid $white;
-    padding: 6px 18px 13px 18px;
+    padding: 6px 20px 13px 20px;
     display: block;
 }
 
@@ -82,7 +83,7 @@ header h3:after{
     padding-right: 60px;
 }
 
-button{
+header button{
     color: $white;
     background: none;
     border: none;
@@ -92,7 +93,7 @@ button{
     cursor: pointer;
 }
 
-button:after{
+header button:after{
     content: '';
     position: absolute;
     right: -22px;
@@ -126,7 +127,6 @@ section{
 
 section h3{
     position: relative;
-    font-size: 36px;
     padding-bottom: 30px;
     margin-bottom: 40px;
 }
@@ -143,6 +143,7 @@ section h3:after{
 
 .little-text{
     font-size: 14px;
+    line-height: 1.4;
 }
 
 .welcome{
@@ -155,11 +156,7 @@ section h3:after{
     height: 300px;
 }
 
-.slider-item{
-    margin: 0 30px;
-}
-
-.slider-item img{
+.slider img{
     margin: 0 auto 15px;
 }
 
@@ -167,12 +164,82 @@ section h3:after{
     background: url("../img/arrow_sl_left.jpg") no-repeat;
     width: 37px;
     height: 72px;
+    text-indent: -9999px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
 }
 
 .slick-next{
     background: url("../img/arrow_sl_right.jpg") no-repeat;
     width: 37px;
     height: 72px;
+    text-indent: -9999px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.services li{
+  border-bottom: 1px solid #d7d7d7;
+  padding: 35px 0;
+}
+
+.services li:last-child{
+  border: none;
+}
+
+.list p{
+  padding-left: 140px;
+}
+
+.list p:before{
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 0;
+  top: 17px;
+}
+
+.trust p:before{
+  background: url("../img/bottom_slaider_1.jpg") no-repeat;
+}
+
+.tax p:before{
+  background: url("../img/bottom_slaider_2.jpg") no-repeat;
+}
+
+.employment p:before{
+  background: url("../img/bottom_slaider_3.jpg") no-repeat;
+}
+
+.structuring p:before{
+  background: url("../img/bottom_slaider_4.jpg") no-repeat;
+}
+
+.coming p:before{
+  background: url("../img/bottom_slaider_5.jpg") no-repeat;
+}
+
+.office p:before{
+  background: url("../img/bottom_slaider_6.jpg") no-repeat;
+}
+
+.corporate p:before{
+  background: url("../img/bottom_slaider_7.jpg") no-repeat;
+}
+
+.compliance p:before{
+  background: url("../img/bottom_slaider_8.jpg") no-repeat;
 }
 
 .management-item{
@@ -182,6 +249,12 @@ section h3:after{
 
 .management-item:last-child{
     margin-right: 0;
+}
+
+.man{
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
 }
 
 .name{
@@ -278,4 +351,98 @@ textarea{
 
 .contact span{
     color: #002e5f;
+}
+
+.copyright{
+  border-top: 1px solid #dddddd;
+}
+
+footer a{
+  color: #787878;
+  font-size: 26px;
+}
+
+footer li{
+  margin-bottom: 10px;
+}
+
+.linkedin-icon{
+  padding-left: 25px;
+}
+
+.linkedin-icon:before{
+  content: '';
+  position: absolute;
+  background: url("../img/lin.jpg") no-repeat;
+  width: 18px;
+  height: 18px;
+  top: 9px;
+  left: 0;
+}
+
+
+@media screen and (max-width: 640px){
+    h3{
+        font-size: 46px;
+    }
+    section p{
+        font-size: 28px;
+    }
+    .header-text{
+        position: relative;
+    }
+    .header-bg{
+        background: url("../img/header-text-bg.jpg") no-repeat;
+        width: 640px;
+        height: 769px;
+        padding: 0;
+    }
+    .logo{
+        background: #043355;
+        height: 120px;
+        text-align: center;
+        padding-top: 42px;
+    }
+    .menu{
+        text-align: center;
+        padding-top: 46px;
+    }
+    .next{
+      font-size: 40px;
+      padding: 10px 30px 20px 30px;
+    }
+    .little-text{
+        font-size: 24px;
+    }
+    .photo{
+        background: url("../img/photo-sm.jpg") no-repeat;
+    }
+    .link-arrow{
+        font-size: 23px;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 28px;
+    }
+    .resources .blue-link{
+        font-size: 24px;
+        margin-left: 0px;
+    }
+    .register{
+        flex-direction: column;
+    }
+    .register input{
+        margin: 20px auto 0;
+    }
+    .register input:first-child{
+        margin: 0 auto;
+    }
+    .box{
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #d7d7d7;
+    }
+    .contact{
+      border-bottom: 2px solid $blue;
+    }
 }
