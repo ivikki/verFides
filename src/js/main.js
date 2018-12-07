@@ -5,28 +5,29 @@ import 'slick-carousel/slick/slick.css';
 
 $(document).ready(function(){
 
-    var slider = $('.slider').slick({
+    $('.slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1
     });
 
+    var video = document.getElementById('video');
     $('.btn-play').click(function(){
-        if ($(this).hasClass('pause')) {
-            $(this)
-                .removeClass('pause')
-                .addClass('play')
-                .text('Play')
-            ;
-
-            slider.slick('slickPause');
-        } else {
+        if (video.paused) {
             $(this)
                 .removeClass('play')
                 .addClass('pause')
                 .text('Pause')
             ;
 
-            slider.slick('slickPlay');
+            video.play();
+        } else {
+            $(this)
+                .removeClass('pause')
+                .addClass('play')
+                .text('Play')
+            ;
+
+            video.pause();
         }
     });
 });

@@ -112,11 +112,7 @@ header button:after{
     height: 19px;
 }
 
-.play{
-    display: none !important;
-}
-
-submit{
+.submit{
     cursor: pointer;
 }
 
@@ -154,6 +150,7 @@ section h3:after{
     background: url("../img/photo.jpg") no-repeat;
     width: 1360px;
     height: 300px;
+    max-width: 100%;
 }
 
 .slider img{
