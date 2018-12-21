@@ -25,6 +25,14 @@ h4{
     font-size: 18px;
 }
 
+button:focus{
+    outline: none;
+}
+header{
+    width: 1360px;
+    margin: 0 auto;
+}
+
 header, header a, header a:hover{
     color: $white;
 }
@@ -32,7 +40,11 @@ header, header a, header a:hover{
 .header-text{
     position: absolute;
     top: 0;
-    left: 0;
+    width: 1360px;
+}
+
+.logo img{
+    margin-left: 20px;
 }
 
 .navbar-item{
@@ -93,23 +105,23 @@ header button{
     cursor: pointer;
 }
 
-header button:after{
+button:after{
     content: '';
     position: absolute;
     right: -22px;
     top: 3px;
 }
 
-.pause button:after{
-    background: url("../img/pause_bg.png") no-repeat;
-    width: 19px;
-    height: 20px;
-}
-
 .play button:after{
     background: url("../img/play_bg.png") no-repeat;
     width: 22px;
     height: 19px;
+}
+
+.pause button:after{
+    background: url("../img/pause_bg.png") no-repeat;
+    width: 19px;
+    height: 20px;
 }
 
 .submit{
@@ -153,6 +165,10 @@ section h3:after{
     max-width: 100%;
 }
 
+.slider{
+    margin: 0 auto;
+}
+
 .slider img{
     margin: 0 auto 15px;
 }
@@ -165,7 +181,7 @@ section h3:after{
     padding: 0;
     border: none;
     position: absolute;
-    left: 0;
+    left: -40px;
     top: 30px;
 }
 
@@ -177,7 +193,7 @@ section h3:after{
     padding: 0;
     border: none;
     position: absolute;
-    right: 0;
+    right: -40px;
     top: 30px;
 }
 
@@ -188,6 +204,7 @@ ul{
 .services li{
   border-bottom: 1px solid #d7d7d7;
   padding: 35px 0;
+    height: 150px;
 }
 
 .services li:last-child{
@@ -318,8 +335,8 @@ label{
 input[type=text], textarea{
     background: rgba(255, 255, 255, 0.07);
     border: none;
-    padding: 10px 10px;
-    width: 313px;
+    padding: 16px 10px;
+    width: 353px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: bold;
@@ -331,7 +348,18 @@ input[type=text]:first-child{
 }
 
 textarea{
-    height: 170px;
+    max-height: 190px;
+    min-height: 190px;
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+textarea:focus::placeholder{
+    color: transparent;
 }
 
 .resources .blue-link{
@@ -354,12 +382,17 @@ textarea{
   border-top: 1px solid #dddddd;
 }
 
-footer a{
+.bottom-menu{
+    border-top: 2px solid $blue;
+    padding-bottom: 0;
+}
+
+.bottom-menu a{
   color: #787878;
   font-size: 26px;
 }
 
-footer li{
+.bottom-menu li{
   margin-bottom: 10px;
 }
 
@@ -387,6 +420,7 @@ footer li{
     }
     .header-text{
         position: relative;
+        width: 640px;
     }
     .header-bg{
         background: url("../img/header-text-bg.jpg") no-repeat;
@@ -421,6 +455,9 @@ footer li{
     h4{
         font-size: 28px;
     }
+    .management-item{
+        width: 50%;
+    }
     .resources .blue-link{
         font-size: 24px;
         margin-left: 0px;
@@ -439,7 +476,7 @@ footer li{
       margin-bottom: 15px;
       border-bottom: 1px solid #d7d7d7;
     }
-    .contact{
-      border-bottom: 2px solid $blue;
+    input[type=text], textarea{
+        font-size: 24px;
     }
 }

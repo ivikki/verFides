@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $('.slider').slick({
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     });
 
     var video = document.getElementById('video');
