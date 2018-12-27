@@ -257,12 +257,7 @@ ul{
 }
 
 .management-item{
-    margin-right: 61px;
     font-family: MyriadPro;
-}
-
-.management-item:last-child{
-    margin-right: 0;
 }
 
 .man{
@@ -313,8 +308,18 @@ ul{
 }
 
 .map{
-    background: $blue url("../img/map.png") no-repeat 50% 0;
     padding: 90px 0;
+    position: relative;
+}
+
+.map:before{
+    content:'';
+    position: absolute;
+    background: $blue url("../img/map.png") no-repeat;
+    width: 995px;
+    height: 471px;
+    left: 15%;
+    top:0;
 }
 
 .blue .link-arrow{
@@ -336,7 +341,7 @@ input[type=text], textarea{
     background: rgba(255, 255, 255, 0.07);
     border: none;
     padding: 16px 10px;
-    width: 353px;
+    width: 330px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: bold;
@@ -344,7 +349,7 @@ input[type=text], textarea{
 }
 
 input[type=text]:first-child{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 textarea{
@@ -455,18 +460,19 @@ textarea:focus::placeholder{
     h4{
         font-size: 28px;
     }
+   .map:before{
+      left: 0;
+  }
     .management-item{
-        width: 50%;
+       font-family: "OpenSans";
     }
     .resources .blue-link{
         font-size: 24px;
         margin-left: 0px;
     }
-    .register{
-        flex-direction: column;
-    }
     .register input{
         margin: 20px auto 0;
+        width: 500px;
     }
     .register input:first-child{
         margin: 0 auto;
