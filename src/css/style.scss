@@ -95,30 +95,27 @@ header h3:after{
     padding-right: 60px;
 }
 
-header button{
-    color: $white;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    position: relative;
-    cursor: pointer;
+.btn-play{
+  color: $white;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
 }
 
-button:after{
-    content: '';
-    position: absolute;
-    right: -22px;
-    top: 3px;
+.btn-play:after{
+  content: '';
+  position: absolute;
+  right: -22px;
+  top: 3px;
+  background: url("../img/play_bg.png") no-repeat;
+  width: 22px;
+  height: 19px;
 }
 
-.play button:after{
-    background: url("../img/play_bg.png") no-repeat;
-    width: 22px;
-    height: 19px;
-}
-
-.pause button:after{
+.btn-play.pause:after{
     background: url("../img/pause_bg.png") no-repeat;
     width: 19px;
     height: 20px;
@@ -308,14 +305,14 @@ ul{
 }
 
 .map{
-    padding: 90px 0;
     position: relative;
+    background: $blue;
 }
 
 .map:before{
     content:'';
     position: absolute;
-    background: $blue url("../img/map.png") no-repeat;
+    background: url("../img/map.png") no-repeat;
     width: 995px;
     height: 471px;
     left: 15%;
